@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam&family=Oswald&display=swap');
+
+
+body{
+    width: 936px;
+    margin: 0 auto;
+    /*no topo e bottom é 0 na esquerda e direita é automático*/
+    font-family: 'Kufam', cursive;
+}
+
+
+h1{
+    color: rgb(0, 16, 236);
+}
+p{
+    font-size: 16px;
+}
+header{
+    background-color: lightgray;
+    padding: 15px 0 25px 0;
+
+    
+}
+hgroup#principal{
+    width: 936px;
+    text-align: center;
+    margin: 40px;
+}
+hgroup#principal h2{
+    margin-top: -20px;
+    font-size: 20px;
+}    
+/*FORMATAÇÃO LINKS*/
+a {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(185, 175, 238);
+}
+a:hover {
+    color: rgb(204, 204, 221) !important ;
+
+}
+a:visited{
+    color:rgb(110, 112, 8);
+}
+section {
+    display: inline-block;   
+    background-color: gainsboro;
+    padding: 40px 0 ;
+}
+article{
+    width: 425px;
+    float: left;
+    margin-left: 40px;
+
+}
+article h1{
+    font-size: 25px;
+}
+
+article p{
+    line-height: 25px;
+
+}
+.full-screen{
+    width: 896px;
+    text-align: center;
+}
+/*FORMATACAO IDs*/
+figure#foto-tanas{
+    margin: 0;
+}
+figure#foto-tanas img{
+    width: 425px;
+}
+div#principal{
+    width: 936px;
+    text-align: center;
+}
+
+
+/* FORMATACAO MENU*/
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    margin-left: 60px;
+    text-align: center;
+}
+nav#menu li{
+    display: inline-block;
+    background-color: aquamarine;
+    padding: 15px 45px;
+    margin: -3px;
+}
+nav#menu li:hover{
+    background-color: burlywood;
+}
+nav#menu a{
+    text-decoration: none;
+    font-size: 16px;
+  
+}
+nav#menu a:visited {
+    color: rgb(23, 212, 23);
+}
+nav#menu a:hover {
+    color: rgb(255, 255, 255) !important;
+}
+nav#menu img{
+    width: 50px;
+    float: left;
+    position: absolute;
+    top: 30px;
+    margin-left: 40px;
+
+}
+nav#menu li.ativo a{
+    color: blueviolet;
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    margin-top: -10px;
+    font-family: 'Oswald', sans-serif;
+}
+footer ul{
+    list-style: none;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a::before{
+    /*Alt + 0187 ou no html= &raquo;  no CSS= \00BB */
+    content: "\00BB";
+    color: red;
+}
+/*
+Esse classe foi criada para colocar as margens no local correto. 
+Podem ser ajustadas de diversas formas, mas esse métdo foi  eficaz porque o tamannho do meu body era de 936 - 40 de margin = 896. :)
+*/
+
+/* contato.html estilização*/
+.container{
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+#formContato{
+    background: #f9f9f9;
+    padding: 25px 45px 25px 25px;
+    margin: 50px 0;
+    text-align: left;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+#formContato input[type="text"],
+#formContato input[type="email"]{
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+/* Todo elemento que é em bloco (retangulo)  a margem externa é margin e a interna é padding*/
+#formContato button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #4CAF50;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#formContato button[type="submit"]:hover {
+    background: #3a853e;
+    transition: background-color 0.3s ease-in-out ;
+}
+#formContato input:focus {
+    outline: 0;
+    border: 1px solid #aaa ;
+}
+
+#formContato fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    padding: 0;
+    width: 100%;
+}
