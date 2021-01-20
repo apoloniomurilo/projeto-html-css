@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-family: "Indie Flower", cursive;
+}
+.container {
+  width: 100%;
+}
+
+#cabecalho {
+  background-color: rgb(178, 200, 206);
+  width: 100%;
+}
+#cabecalho img {
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* MENU TUDO BUGADO - ARRUMAR BACKGROUND */
+#nav-princial ul {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+#nav-principal li {
+  display: block;
+  float: left;
+  padding: 0 70px;
+}
+
+#nav-principal a {
+  float: left;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  background: #e62a2a url(../imagens/botao-3.png) no-repeat;
+  text-transform: uppercase;
+  color: rgb(27, 12, 3);
+  line-height: 20px;
+  text-indent: 20px;
+  width: 120px;
+  height: 50px;
+  font-size: 1.5em;
+}
+#nav-principal a:hover {
+  background: #e62a2a url(../imagens/botao-4.png) no-repeat;
+  text-shadow: 1px 2px;
+  color: rgb(113, 113, 211);
+}
+
+#container-nav #nav-principal {
+  align-items: center;
+}
+/* FIM DO MENU TUDO BUGADO - ARRUMAR BACKGROUND */
+
+#corpo-site {
+  margin-top: 60px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #e62a2a url(../imagens/background-linhas.png) repeat;
+}
+
+#corpo-site h1 {
+  text-align: left;
+  font-size: 4em;
+  margin-left: 25%;
+  padding: 20px;
+  margin-bottom: 0;
+}
+.quebra {
+  color: rgb(32, 32, 151);
+  float: left;
+  margin-left: 200px;
+  margin-top: -30px;
+  font-size: 30px;
+}
+
+.livro-escrito {
+  position: relative;
+  display: flex;
+  clear: both;
+  margin-left: 190px;
+}
+
+.texto {
+  font-size: 25px;
+  display: flex;
+  padding-top: 10px;
+  margin: 50px 40px;
+}
+
+.flutue {
+  width: 300px;
+  float: left;
+}
+
+/*fim do corpo*/
+
+#footer {
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: rgb(58, 169, 174);
+  font-weight: 800;
+  color: rgb(0, 20, 20);
+  text-align: center;
+}
+#footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#footer li a {
+  text-decoration: none;
+  color: black;
+}
+
+#footer li a:hover {
+  color: rgb(255, 255, 255);
+}
